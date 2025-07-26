@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Byte Bistro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts for modern, stylish typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Byte Bistro</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservations</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Bistro</h2>
+      <p>Where every bite is a celebration. Discover vibrant flavors and unforgettable moments!</p>
+    </div>
+    <div class="floating-images">
+      <img src="images.jpeg" class="float float1" alt="Dish 1">
+      <img src="chocolate-truffle-cake-8844.jpg" class="float float2" alt="Dish 2">
+      <img src="Margherita-Pizza.jpg.webp" class="float float3" alt="Dish 3">
+      <img src="garlic-butter-shrimp-1-10.jpg" class="float float4" alt="Dish 4">
+    </div>
+  </section>
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-list">
+      <div class="menu-item">
+        <h3>Margherita Pizza</h3>
+        <p>Classic Neapolitan pizza with San Marzano tomatoes, creamy mozzarella, and fresh basil.</p>
+        <span>$12</span>
+      </div>
+      <div class="menu-item">
+        <h3>Truffle Pasta</h3>
+        <p>Homemade fettuccine tossed in a rich, silky truffle cream sauce.</p>
+        <span>$18</span>
+      </div>
+      <div class="menu-item">
+        <h3>Caprese Salad</h3>
+        <p>Heirloom tomatoes, buffalo mozzarella, basil, and a drizzle of olive oil.</p>
+        <span>$10</span>
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm chocolate cake with a gooey, molten center, served with vanilla gelato.</p>
+        <span>$8</span>
+      </div>
+      <div class="menu-item">
+        <h3>Grilled Salmon</h3>
+        <p>Perfectly seared salmon fillet on a bed of wild rice and seasonal veggies.</p>
+        <span>$21</span>
+      </div>
+      <div class="menu-item">
+        <h3>Eggplant Parmigiana</h3>
+        <p>Baked layers of eggplant, marinara, and mozzarella, finished with basil pesto.</p>
+        <span>$15</span>
+      </div>
+      <div class="menu-item">
+        <h3>Garlic Butter Shrimp</h3>
+        <p>Juicy shrimp sautéed in garlic butter, served over creamy polenta.</p>
+        <span>$19</span>
+      </div>
+      <div class="menu-item">
+        <h3>Rainbow Quinoa Bowl</h3>
+        <p>Colorful roasted veggies, chickpeas, feta, and lemon-tahini dressing over quinoa.</p>
+        <span>$14</span>
+      </div>
+      <div class="menu-item">
+        <h3>Classic Tiramisu</h3>
+        <p>Espresso-soaked ladyfingers layered with mascarpone and cocoa.</p>
+        <span>$9</span>
+      </div>
+      <div class="menu-item">
+        <h3>Mango Panna Cotta</h3>
+        <p>Creamy vanilla panna cotta topped with fresh mango puree and mint.</p>
+        <span>$10</span>
+      </div>
+      <div class="menu-item">
+        <h3>Wood-fired Garlic Bread</h3>
+        <p>Rustic wood-fired bread brushed with garlic butter and herbs.</p>
+        <span>$6</span>
+      </div>
+      <div class="menu-item">
+        <h3>Lemon Herb Chicken</h3>
+        <p>Succulent roasted chicken marinated in lemon and Mediterranean herbs.</p>
+        <span>$17</span>
+      </div>
+    </div>
+  </section>
+  <section id="reservation">
+    <h2>Reservations</h2>
+    <form id="reservationForm">
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Date: <input type="date" name="date" required></label>
+      <label>Time: <input type="time" name="time" required></label>
+      <label>Guests: <input type="number" name="guests" min="1" max="10" required></label>
+      <button type="submit">Book Now</button>
+      <p id="confirmation" class="hidden"></p>
+    </form>
+  </section>
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div class="events-list">
+      <div class="event">
+        <h3>Wine Tasting Night</h3>
+        <p>August 10, 2025 - Sample exquisite Italian wines with our sommelier.</p>
+      </div>
+      <div class="event">
+        <h3>Live Jazz Dinner</h3>
+        <p>August 20, 2025 - Enjoy a gourmet meal with live jazz music.</p>
+      </div>
+      <div class="event">
+        <h3>Pasta Workshop</h3>
+        <p>September 5, 2025 - Learn to make authentic pasta from our chefs.</p>
+      </div>
+      <div class="event">
+        <h3>Seafood Festival</h3>
+        <p>September 15, 2025 - Celebrate the ocean's bounty with our special seafood menu.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Delizioso Restaurant. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
